@@ -1,0 +1,67 @@
+<div class="accordiancontainer">
+    <nav>
+        <accordion [isAnimated]="true">
+            <accordion-group [isDisabled]="true">
+                <span accordion-heading>
+          <ul>
+            <li><a routerLink="#">Home</a></li>
+          </ul>
+          </span>
+            </accordion-group>
+            <accordion-group [isDisabled]="true">
+                <span accordion-heading>
+            <ul>
+                <li><a routerLink="#">My Bookshelf</a></li>
+              </ul>
+          </span>
+            </accordion-group>
+            <accordion-group [isDisabled]="true">
+                <span accordion-heading>
+            <ul>
+                <li><a routerLink="#">Data Warehouse Content</a></li>
+              </ul>
+          </span>
+            </accordion-group>
+            <accordion-group>
+                <span accordion-heading>
+            <ul>
+                <li><a (click)="rotateArrow('dash')">Dashboards<span [style.transform]="'rotate('+dash+'deg)'">&#10148;</span></a>
+                </li>
+                </ul>
+                </span>
+                <ul>
+                    <li><a routerLink="#">Dashboard Link 1</a></li>
+                    <li><a routerLink="#">Dashboard Link 2</a></li>
+                    <li><a routerLink="#">Dashboard Link 3</a></li>
+                </ul>
+            </accordion-group>
+            <accordion-group>
+                <span accordion-heading>
+            <ul>
+                <li><a (click)="rotateArrow('cont')">Add Content<span [style.transform]="'rotate('+cont+'deg)'">&#10148;</span></a>
+                </li>
+                </ul>
+                </span>
+                <ul>
+                    <li><a routerLink="#">Document</a></li>
+                    <li><a routerLink="#">Links</a></li>
+                    <li><a routerLink="#">Data Set</a></li>
+                </ul>
+            </accordion-group>
+            <accordion-group [isDisabled]="true">
+                <span accordion-heading>
+          <ul>
+              <li><a routerLink="#">Admin Portal</a></li>
+            </ul>
+        </span>
+            </accordion-group>
+            <accordion-group [isDisabled]="true">
+                <span accordion-heading>
+          <ul>
+              <li><a routerLink="#">Help</a></li>
+            </ul>
+        </span>
+            </accordion-group>
+        </accordion>
+    </nav>
+</div>

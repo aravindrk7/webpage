@@ -1,0 +1,160 @@
+<!-- <div class="accordiancontainer">
+    <nav>
+        <accordion [isAnimated]="true">
+            <accordion-group [isDisabled]="true">
+                <span accordion-heading>
+          <ul>
+            <li><a routerLink="#">Home</a></li>
+          </ul>
+          </span>
+            </accordion-group>
+            <accordion-group [isDisabled]="true">
+                <span accordion-heading>
+            <ul>
+                <li><a routerLink="#">My Bookshelf</a></li>
+              </ul>
+          </span>
+            </accordion-group>
+            <accordion-group [isDisabled]="true">
+                <span accordion-heading>
+            <ul>
+                <li><a routerLink="#">Data Warehouse Content</a></li>
+              </ul>
+          </span>
+            </accordion-group>
+            <accordion-group>
+                <span accordion-heading>
+            <ul>
+                <li><a (click)="rotateArrow('dash')">Dashboards<span [style.transform]="'rotate('+dash+'deg)'">&#10148;</span></a>
+                </li>
+                </ul>
+                </span>
+                <ul>
+                    <li><a routerLink="#">Dashboard Link 1</a></li>
+                    <li><a routerLink="#">Dashboard Link 2</a></li>
+                    <li><a routerLink="#">Dashboard Link 3</a></li>
+                </ul>
+            </accordion-group>
+            <accordion-group>
+                <span accordion-heading>
+            <ul>
+                <li><a (click)="rotateArrow('cont')">Add Content<span [style.transform]="'rotate('+cont+'deg)'">&#10148;</span></a>
+                </li>
+                </ul>
+                </span>
+                <ul>
+                    <li><a routerLink="#">Document</a></li>
+                    <li><a routerLink="#">Links</a></li>
+                    <li><a routerLink="#">Data Set</a></li>
+                </ul>
+            </accordion-group>
+            <accordion-group [isDisabled]="true">
+                <span accordion-heading>
+          <ul>
+              <li><a routerLink="#">Admin Portal</a></li>
+            </ul>
+        </span>
+            </accordion-group>
+            <accordion-group [isDisabled]="true">
+                <span accordion-heading>
+          <ul>
+              <li><a routerLink="#">Help</a></li>
+            </ul>
+        </span>
+            </accordion-group>
+        </accordion>
+    </nav>
+</div> -->
+
+<div class="overContainer">
+
+    <div class="heading">
+        <img src="../../assets/cover.jpg" alt="">
+        <div class="headingContent">
+            <h1>Knowledge Management System</h1>
+            <br>
+            <h5>A collection of structured and unstructured data objects published and/or funded by Annie E.Casey Foundation</h5>
+        </div>
+
+    </div>
+
+
+
+    <div class="maincontainer">
+        <div class="navBar">
+            <app-nav></app-nav>
+        </div>
+
+        <div class="content">
+            <div class="card">
+                <img src="../../assets/div1.PNG" alt="">
+                <div class="details">
+                    <h1>What we’re doing...</h1>
+                    <p>
+                        platforms storage is structured such that staff, grantees, and partners can securely access and analyze the data according to their needs using Power BI, Qualtrics, or other toolsets. Nearly every organization recognizes the need to build a data driven
+                        culture. However, many struggle to use data for a variety of reasons, a big one of them being that data exists in all sorts of places. This platform is meant to address that challenge.
+                    </p>
+                    <p class="readMore" #more>
+                        This platform has been created as the Foundations central repository for storing and reporting on final data sets and other data types. This data typically originates from grantees, partners, and staff, and then select data types are uploaded into the
+                        data warehouse for long-term storage and analysis. Specific guidance on what should be uploaded may be found on Horizon. (Link to a post). Other shared data should be kept in units box folders, or other designated locations. This
+                        platforms storage is structured such that staff, grantees, and partners can securely access and analyze the data according to their needs using Power BI, Qualtrics, or other toolsets.
+                    </p>
+                    <button (click)="show()" id="myBtn">{{'Read ' + status}}</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../../assets/div2.PNG" alt="">
+                <div class="details">
+                    <h1>How to get support...</h1>
+                    <p>If you need assistance, please select the support tile in Okta and follow the instructions in the support portal.</p>
+                    <a routerLink="#">Link to web page for portal</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../../assets/div3.PNG" alt="">
+                <div class="details">
+                    <h1>See how it works…..</h1>
+                    <p>we need to create them based on the go-live version Video 1 – Quick overview Video 2 – upload process Video 3 – Power BI Overview</p>
+                    <a routerLink="#">Watch Video</a>
+                </div>
+            </div>
+
+
+
+
+            <!-- <div class="container1" id="con">
+                <div class="left">
+                </div>
+                <div class="right">
+                    <h4>What we’re doing….</h4><br>
+                    <h5>Nearly every organization recognizes the need to build a data driven culture. However, many struggle to use data for a variety of reasons, a big one of them being that data exists in all sorts of places. This platform is meant to address
+                        that challenge.
+                    </h5><span id="dots">...</span><span id="more">
+          This platform has been created as the Foundations central repository for storing and reporting on final data sets and other data types. This data typically originates from grantees, partners, and staff, and then select data types are uploaded into the data warehouse for long-term storage and analysis.  Specific guidance on what should be uploaded may be found on Horizon.  (Link to a post).  Other shared data should be kept in units box folders, or other designated locations.
+         This platforms storage is structured such that staff, grantees, and partners can securely access and analyze the data according to their needs using Power BI, Qualtrics, or other toolsets.
+        </span>
+                    <br>
+                    <button onclick="myFunction()" id="myBtn">Read more</button>
+                </div>
+            </div>
+            <div class="container2" id="con">
+                <div class="left">
+                </div>
+                <div class="right">
+                    <h4>How to get support….</h4> <br>
+                    <h5>If you need assistance, please select the support tile in Okta and follow the instructions in the support portal.</h5>
+                    <br> <a routerLink="#">Link to web page for portal</a>
+                </div>
+            </div>
+            <div class="container3" id="con">
+                <div class="left">
+                </div>
+                <div class="right">
+                    <h4>See how it works…..</h4><br>
+                    <h5>we need to create them based on the go-live version Video 1 – Quick overview Video 2 – upload process Video 3 – Power BI Overview</h5><br>
+                    <a routerLink="#">Watch Video</a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- </div> -->
